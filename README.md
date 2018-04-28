@@ -7,10 +7,9 @@ Simple example of [grpc-java](https://github.com/grpc/grpc-java) with [ScalaPB](
 Run the following command:
 
 ```bash
-➜  grpc-scala-json sbt
-
+➜  cd grpc-scala-json
+➜  sbt
 sbt:grpc-scala-json> compile
-
 sbt:grpc-scala-json> run
 [warn] Multiple main classes detected.  Run 'show discoveredMainClasses' to see the list
 
@@ -34,6 +33,9 @@ Apr 28, 2018 4:16:29 PM helloworld.HelloWorldServer helloworld$HelloWorldServer$
 Run the following command and input the path of JSON file:
 
 ```bash
-➜  grpc-scala-json sbt
+➜  cd grpc-scala-json
+➜  sbt
 sbt:grpc-scala-json> runMain helloworld.HelloWorldClient ./data/helloworld.json
 ```
+
+Default path of `helloworld.json` is `./data/helloworld.json`.
