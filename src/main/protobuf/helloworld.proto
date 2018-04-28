@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package protos;
+
+service Greeter {
+    rpc sayHello (HelloRequest) returns (HelloReply) {}
+}
+
+message HelloRequest {
+    message Location {
+        int32 x = 1;
+        int32 y = 2;
+    }
+
+    string name = 1;
+    uint64 phone = 2;
+    Location location = 3;
+}
+
+message HelloReply {
+    int32 logid = 1;
+    string message = 2;
+}

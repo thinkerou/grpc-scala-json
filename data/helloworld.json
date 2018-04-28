@@ -1,0 +1,8 @@
+{
+        "name": "thinkerou",
+        "phone": 1234567890,
+        "location": {
+                "x": 123,
+                "y": 456
+        }
+}
